@@ -93,15 +93,18 @@ body {
 /* Gradient Text / Background */
 .gradient-text {
   @apply bg-clip-text text-transparent bg-size-200;
+
   background-image: linear-gradient(
     to right,
-    var(--gradient-start),
-    var(--gradient-middle),
-    var(--gradient-end)
+    #ff8a00,
+    #ffb300,
+    #ffd54f,
+    #ff8a00
   );
-  animation: var(--animate-gradient-x);
-}
 
+  animation: var(--animate-gradient-x);
+  filter: drop-shadow(0 0 15px rgba(255, 179, 0, 0.7));
+}
 /* Neo Button */
 .neo-btn {
   @apply text-white font-bold shadow-lg transition-all duration-300 hover:-translate-y-1;
@@ -142,18 +145,19 @@ body {
 .grid-pattern {
   background-color: #F0F0FF;
   background-image:
-    linear-gradient(rgba(0,0,0,0.05) 1px, transparent 1px),
+    linear-gradient(rgba(55, 54, 52, 0.05) 1px, transparent 1px),
     linear-gradient(90deg, rgba(0,0,0,0.05) 1px, transparent 1px);
   background-size: 40px 40px;
   color: var(--color-text);
 }
 
 html.dark .grid-pattern {
-  background-color: #0A0A1A;
+  background-color: #090909;
   background-image:
-    linear-gradient(rgba(255,255,255,0.05) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(255,255,255,0.05) 1px, transparent 1px);
-    color: var(--color-text);
+    linear-gradient(rgba(255, 166, 0, 0.05) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 166, 0, 0.05) 1px, transparent 1px);
+  background-size: 40px 40px;
+  color: var(--color-text);
 }
 
 
