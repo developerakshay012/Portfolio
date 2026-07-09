@@ -1,6 +1,6 @@
 import React from 'react'
 import { motion } from 'framer-motion'
-
+import { navItems  } from './Work'
 
 
 const Header = () => {
@@ -31,6 +31,49 @@ const Header = () => {
               >
                       AKSHAY
               </motion.span>
+
+
+              {/* menu items of desktop */}
+
+                <div className='hidden  lg:flex items-center  space-x-10'>
+                    {
+                      navItems.map((item , index) => (
+                        <motion.a
+                          key={item.label}
+                          href={item.href}
+                          className='relative group hover:text-neo-secondary'
+                          initial={{opacity:0 , y:-15}}
+                          animate={{opacity:1 , y:0}}
+                          transition={{
+                            type:"spring",
+                            stiffness:120
+                          }}
+                          whileHover={{y:-3}}
+                        >
+                          {item.label}
+                        </motion.a>
+
+                      ))
+                    }
+
+                    {/* reume buttom */}
+
+                    <motion.button
+                    whileHover={{
+                      scale:1.03,
+                      boxShadow:"0 0 10px rgba(255, 215, 0, 0.6)"
+                    }}
+
+                    className='px-4 py-1 rounded-full border dark:border-gray-300 font-semibold cursor-pointer'
+                    >
+                      Resume
+                    </motion.button>
+
+                </div>
+
+
+
+
 
             </div>
           </div>
