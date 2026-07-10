@@ -1,9 +1,22 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { motion } from 'framer-motion'
 import { navItems  } from './Work'
+import { FaMoon, FaSun } from 'react-icons/fa'
+import { toggleTheme } from '../Utils/theme'
 
 
 const Header = () => {
+
+
+      const [isDark , setIsDark] = useState(true)
+
+
+      const toggleButton = () =>{ 
+        toggleTheme()
+        setIsDark(!isDark)
+      }
+
+
   return (
     <>
         {/* navbar */}
@@ -67,6 +80,17 @@ const Header = () => {
                     className='px-4 py-1 rounded-full border dark:border-gray-300 font-semibold cursor-pointer'
                     >
                       Resume
+                    </motion.button>
+
+
+                    {/* theme toggle button */}
+                    <motion.button
+                    className='w-10 h-10 rounded-full glass dark:glass flex items-center  justify-center '
+                    >
+                      {isDark ? (<FaSun className='h-5 w-5 text-yellow-300 cursor-pointer' />) : ( <FaMoon/>) }
+                      
+                     
+                      
                     </motion.button>
 
                 </div>
