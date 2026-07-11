@@ -39,9 +39,9 @@ const Header = () => {
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.7 }}
               whileHover={{ scale: 1.05 }}
-              className="text-2xl font-bold cursor-pointer gradient-text"
+              className="text-2xl font-bold cursor-pointer gradient-text uppercase"
             >
-              AKSHAY
+              Lazycoder
             </motion.span>
 
             {/* menu items of desktop */}

@@ -4,6 +4,8 @@ import { FaArrowRight } from "react-icons/fa";
 import { MdTouchApp } from "react-icons/md";
 import { socialPlatforms } from "./Work";
 import Akshay from '../assets/akshay.png'
+import Lottie from "react-lottie-player";
+import lottieJson from '../lottieYellow.json'
 
 
 
@@ -84,7 +86,7 @@ const Hero = () => {
 
             <motion.div
             initial={{opacity:0 }}
-                whileInView={{opacity:1}}
+                whileInView={{opacity:1 , x:10}}
                 transition={{delay:0.3 , duration:0.8}}
                 viewport={{once:false , amount:0.3}}
                 className="mt-5 flex items-center lg:justify-start space-x-6"
@@ -112,10 +114,25 @@ const Hero = () => {
 
               <div className="order-1 lg:order-2 flex justify-center items-center relative ">
 
-                  <motion.div>
-                  <motion.div className="relative w-90 h-100 ">
+                  <motion.div 
+                  initial={{opacity:0 , scale:0.8}}
+                  whileInView={{opacity:1 , scale:1}}
+                  transition={{duration:0.8}}
+                  viewport={{once:false , amount:0.3}}
+
+                  className="relative w-90 h-100 sm:w-80 sm:h-80 md:w-90 md:h-100">
+                  <motion.div 
+                  className="inset-0 absolute rounded-3xl overflow-hidden">
                       <img src={Akshay} alt=""   className="object-cover   rounded-xl"/>
                   </motion.div>
+
+                    <motion.div 
+                    
+                   className="absolute -bottom-20 -right-5 w-40   rounded-xl glass data:glass border-2 border-amber-300 overflow-hidden" >
+                      <p className="text-center mt-2 text-amber-200 font-bold">SOFTWERE DEVELOPER</p>
+                      <Lottie animationData={lottieJson} play loop />
+                    </motion.div>
+
                   </motion.div>
 
               </div>
