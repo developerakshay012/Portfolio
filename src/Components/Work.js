@@ -1,5 +1,5 @@
 import { FaDribbble, FaGithub, FaLinkedinIn, FaTwitter } from 'react-icons/fa';
-
+import { SiLeetcode } from "react-icons/si";
 import { FiCpu, FiLayers, FiMonitor, FiSettings, FiSmartphone } from 'react-icons/fi';
 
 
@@ -17,10 +17,13 @@ export const navItems = [
 
 export const socialPlatforms = [
     { icon: FaTwitter, href: '#' },
-    { icon: FaGithub, href: '#' },
-    { icon: FaLinkedinIn, href: '#' },
-    { icon: FaDribbble, href: '#' },
+    { icon: FaGithub, href: 'https://github.com/developerakshay012' },
+    { icon: FaLinkedinIn, href: 'https://www.linkedin.com/in/akshay-kumar-03494a2b5' },
+    { icon: SiLeetcode, href: 'https://leetcode.com/u/imrakshay/' },
 ];
+
+
+
 
 // export const projects = [ 
 //     {
