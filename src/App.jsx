@@ -5,6 +5,7 @@ import { initialTheme } from './Utils/theme'
 import AnimateBg from './Components/AnimateBg'
 import Header from './Components/Header'
 import Hero from './Components/Hero'
+import Project from './Components/Project'
 
 function App() {
   
@@ -20,6 +21,7 @@ function App() {
 
           <main>
             <Hero/>
+            <Project/>  
           </main>
 
       </div>

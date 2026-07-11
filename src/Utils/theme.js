@@ -19,7 +19,7 @@ export const toggleTheme = () => {
 
 export const initialTheme = () => {
 
-    const savedTheme = localStorage.getItem('theme') || "dark"
+    const savedTheme = localStorage.getItem('theme') || "light"
     const html = document.documentElement;
 
     html.classList.remove('dark' , 'light')

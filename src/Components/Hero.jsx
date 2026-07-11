@@ -25,7 +25,7 @@ const Hero = () => {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8 }}
               viewport={{ once: false, amount: 0.3 }}
-              className="inline-block px-4 py-2 glass dark:glass rounded-full text-yellow-200 font-medium mb-4"
+              className="inline-block px-4 py-2 glass dark:glass rounded-full text-yellow-200 font-medium mb-4 "
             >
               SOFTWERE DEVELOPER
             </motion.span>
@@ -129,8 +129,8 @@ const Hero = () => {
                     <motion.div 
                     
                    className="absolute -bottom-20 -right-5 w-40   rounded-xl glass data:glass border-2 border-amber-300 overflow-hidden" >
-                      <p className="text-center mt-2 text-amber-200 font-bold">SOFTWERE DEVELOPER</p>
-                      <Lottie animationData={lottieJson} play loop />
+                      <p className="text-center mt-2 text-amber-200 font-bold ">SOFTWERE DEVELOPER</p>
+                      <Lottie animationData={lottieJson}  play loop />
                     </motion.div>
 
                   </motion.div>
