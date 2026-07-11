@@ -19,7 +19,7 @@ export const socialPlatforms = [
     { icon: FaTwitter, href: '#' },
     { icon: FaGithub, href: 'https://github.com/developerakshay012' },
     { icon: FaLinkedinIn, href: 'https://www.linkedin.com/in/akshay-kumar-03494a2b5' },
-    { icon: SiLeetcode, href: 'https://leetcode.com/u/imrakshay/' },
+    { icon: SiLeetcode, href: 'https://leetcode.com/u/imrakshay' },
 ];
 
 

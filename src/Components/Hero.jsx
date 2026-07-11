@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 import { FaArrowRight } from "react-icons/fa";
 import { MdTouchApp } from "react-icons/md";
 import { socialPlatforms } from "./Work";
-
+import Akshay from '../assets/akshay.png'
 
 
 
@@ -92,6 +92,8 @@ const Hero = () => {
               {
               socialPlatforms.map((media , index) => (
                 <motion.a
+                 target="_blank"
+                 rel="noopener noreferrer"
                 href={media.href}
                 key={index}
                 whileHover={{scale:1.1}}
@@ -105,6 +107,19 @@ const Hero = () => {
             </motion.div>
 
           </div>
+
+              {/* right */}
+
+              <div className="order-1 lg:order-2 flex justify-center items-center relative ">
+
+                  <motion.div>
+                  <motion.div className="relative w-90 h-100 ">
+                      <img src={Akshay} alt=""   className="object-cover   rounded-xl"/>
+                  </motion.div>
+                  </motion.div>
+
+              </div>
+
         </div>
       </div>
     </section>
