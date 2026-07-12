@@ -1,8 +1,21 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { motion } from 'framer-motion'
 import { projects } from './Work'
+import { GiSkullCrossedBones } from "react-icons/gi";
+
+
 
 const Project = () => {
+
+  const [selectedProject , setSelectedProject] = useState(null)
+
+  const handleOpenModal = (imge) => {
+      setSelectedProject(imge)
+  } 
+
+  const handleCloseModal = (imge) =>{
+    setSelectedProject(null)
+  }
 
   const varient = {
     hiddem:{},
@@ -49,14 +62,15 @@ const Project = () => {
 
           {/* project image  */}
 
-            <motion.div className='grid gap-12 grid-cols-1 md:grid-cols-2 lg:grid-cols-3'>
+            <motion.div className='grid gap-12 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 '>
                   {
                     projects.map((imge , index) => (
                       <motion.div
-                      className='border-2 border-yellow-300 rounded-xl backdrop-blur-md  overflow-hidden cursor-pointer glass dark:glass'
-                      key={index}
+                       onClick={() => handleOpenModal(imge)}
+                      className='rounded-xl backdrop-blur-md  overflow-hidden cursor-pointer glass dark:glass'
+                      key={index.id}
                       >
-                       <div className='p-4'>
+                       <div className='p-4 '>
                          <img src={imge.image} alt=""  className='rounded-xl '/>
                        </div>
 
@@ -84,6 +98,46 @@ const Project = () => {
 
 
         </div>
+
+                  {/* modal container */}
+
+                  {selectedProject && (
+                    <div className='fixed inset-0 z-50 flex  items-center  justify-center glass dark:glass bg-opacity-90 '>
+
+                      <div className='glass dark:glass rounded-xl  shadow-2xl lg:w-[80%] w-[90%] max-w-2xl overflow-hidden relative'>
+                            <div className='flex items-center justify-end p-4'>
+                                <motion.button
+                                onClick={handleCloseModal}
+                                className='glass dark:glass text-3xl font-bold hover:text-yellow-300'
+                                >
+                                  <GiSkullCrossedBones className='w-5 h-5 text-yellow-400 cursor-pointer'/>
+                                </motion.button>
+                            </div>
+
+                        <div className='flex flex-col '>
+                          <div className='w-full flex  justify-center '>
+                                <img src={selectedProject.image} 
+                                alt={selectedProject.title} 
+                                className='lg:w-[80%] w-[90%]  rounded-xl shadow-2xl' />
+                          </div>
+
+                          <div className='lg:p-8 p-6'>
+                                <h3 className='lg:text-xl mb-4 text-md font-bold text-center'>
+                                  {selectedProject.title}
+                                </h3>
+
+                                <p className='mb-5 lg:text-base text-xs'>
+                                  {selectedProject.description}
+                                </p>
+                          </div>
+
+                        </div>
+
+                      </div>
+
+                    </div>  
+                  )}
+
       </section>
 
 
