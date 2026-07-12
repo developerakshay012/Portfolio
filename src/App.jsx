@@ -6,6 +6,7 @@ import AnimateBg from './Components/AnimateBg'
 import Header from './Components/Header'
 import Hero from './Components/Hero'
 import Project from './Components/Project'
+import Skill from './Components/Skill'
 
 function App() {
   
@@ -22,6 +23,7 @@ function App() {
           <main>
             <Hero/>
             <Project/>  
+            <Skill/>
           </main>
 
       </div>
