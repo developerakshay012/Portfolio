@@ -48,7 +48,7 @@ import webverLogo from '../assets/work_logo/web_dig.png';
 
 // Experience Section Logo's
 import webverseLogo from '../assets/company_logo/exellence.png';
-import agcLogo from '../assets/company_logo/agc_logo.png';
+import agcLogo from '../assets/company_logo/future.jpg';
 import newtonschoolLogo from '../assets/company_logo/newtonschool_logo.png'
 
 // education logo
@@ -188,9 +188,9 @@ degree: "Bachelor of Technology (B.Tech) - Computer Science and Engineering"
 export const navItems = [
     { label: "Home", href: "#home" },
     { label: "Skills", href: "#skills" },
-     { label: "Exprience", href: "#Exprience" },
-      {label:"Project", href:"project"},
-    { label: "Education", href: "#Education" },
+     { label: "Exprience", href: "#exprience" },
+      {label:"Project", href:"#project"},
+    { label: "Education", href: "#education" },
 ];
 
 export const socialPlatforms = [

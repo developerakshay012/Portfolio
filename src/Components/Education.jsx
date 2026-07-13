@@ -18,7 +18,7 @@ const Education = () => {
 
   return (
 
-    <section id='exprience' className='py-10 pb-5  px-[12vw] md:px-[7vw] lg:px-[16vw]'>
+    <section id='education' className='py-20 pb-5  px-[12vw] md:px-[7vw] lg:px-[16vw]'>
 
         {/* exprience title */}
 
@@ -28,7 +28,7 @@ const Education = () => {
                   transition={{duration:0.8}}
                   viewport={{once:false , amount:0.3}}
         className='text-center mb-16'>
-            <h2 className='uppercase lg:text-4xl md:text-2xl text-5xl font-bold text-yellow-300/90 '>Education</h2>
+            <h2 className='uppercase lg:text-4xl md:text-2xl text-5xl font-bold gradient-text'>Education</h2>
             <div className='w-30  mx-auto h-1 bg-yellow-300  rounded-sm'></div>
             <p className='text-[17px] pt-3 font-semibold'>
              The educational milestones that have strengthened my foundation in computer science, technology, and software development.

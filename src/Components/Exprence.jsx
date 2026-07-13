@@ -17,7 +17,7 @@ const Exprence = () => {
 
 
   return (
-    <section id='exprience' className='py-10 pb-5  px-[12vw] md:px-[7vw] lg:px-[16vw]'>
+    <section id='exprience' className='py-20 pb-5  px-[12vw] md:px-[7vw] lg:px-[16vw]'>
 
         {/* exprience title */}
 
@@ -27,7 +27,7 @@ const Exprence = () => {
                   transition={{duration:0.8}}
                   viewport={{once:false , amount:0.3}}
         className='text-center mb-16'>
-            <h2 className='uppercase lg:text-4xl md:text-2xl text-5xl font-bold text-yellow-300/90 '>Exprience</h2>
+            <h2 className='uppercase lg:text-4xl md:text-2xl text-5xl font-bold gradient-text'>Exprience</h2>
             <div className='w-30  mx-auto h-1 bg-yellow-300  rounded-sm'></div>
             <p className='text-[17px] pt-3 font-semibold'>
               A timeline of my work experience, highlighting the roles, responsibilities, and achievements throughout my career.
@@ -103,7 +103,7 @@ const Exprence = () => {
                       whileInView='visible'
                       viewport={{ once: false, amount: 0.5 }}
                       whileHover={{ scale: 1.1, }}
-                          className='px-4 py-1 bg-purple-500 rounded-lg mr-2 mb-2 border border-glass dark:glass'
+                          className='px-4 py-1 bg-gradient-to-r font-bold from-[#ff8a00] via-[#ffb300] via-50% to-[#ffd54f] rounded-lg mr-2 mb-2 border border-glass dark:glass'
                           >
                             {skill}
                           </motion.li>

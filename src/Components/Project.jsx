@@ -48,7 +48,7 @@ const Project = () => {
 
   return (
     <>
-      <section id='word' className='py-10 md:py-20 relative z-10'>
+      <section id='project' className='py-10 md:py-20 relative z-10'>
         <div className='max-w-7xl mx-auto px-4 sm:px-6 lg:px-8'>
 
           {/* Header section with text fade-in */}
@@ -64,10 +64,10 @@ const Project = () => {
                   viewport={{once:false , amount:0.3}}
             className='text-center mb-12 md:mb-16'
           >
-            <span className='inline-block px-4 py-2 glass dark:glass rounded-full text-yellow-400 uppercase text-[15px] font-bold tracking-wider'>
+            <span className='inline-block px-4 py-2 glass dark:glass rounded-full gradient-text uppercase text-[15px] font-bold tracking-wider'>
               project
             </span>
-            <h2 className='text-3xl sm:text-4xl md:text-5xl font-bold mt-3 text-yellow-400'>
+            <h2 className='text-3xl sm:text-4xl md:text-5xl font-bold mt-3 gradient-text'>
               Interactive Projects
             </h2>
             <p className='font-bold text-sm md:text-xl lg:text-md mt-3'>
@@ -177,8 +177,12 @@ const Project = () => {
                 {/* Close Button Row */}
                 <div className='flex items-center justify-end p-4 absolute top-0 right-0 z-10'>
                   <motion.button
-                    whileHover={{ scale: 1.1, rotate: 360 }}
-                    whileTap={{ scale: 0.9 , delay:0.7}}
+                    initial={{scale:0}}
+                        animate={{scale:1}}
+                        whileHover={{
+                          rotate:180,
+                          scale:1.1
+                        }}
                     onClick={handleCloseModal}
                     className='glass dark:glass p-2 rounded-full text-3xl font-bold hover:text-yellow-300'
                   >

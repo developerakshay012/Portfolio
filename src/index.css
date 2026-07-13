@@ -116,30 +116,33 @@ body {
   box-shadow: 0 0 20px color-mix(in srgb, var(--gradient-start), transparent 70%);
 }
 
-/* Holographic Effect */
+/* Golden Holographic Effect */
 .holographic {
   @apply relative overflow-hidden;
   background: linear-gradient(
-    to bottom right,
-    color-mix(in srgb, var(--gradient-start) 20%, transparent),
-    color-mix(in srgb, var(--gradient-middle) 20%, transparent),
-    color-mix(in srgb, var(--gradient-end) 20%, transparent)
+    135deg,
+    rgba(255, 215, 0, 0.18),
+    rgba(255, 235, 120, 0.12),
+    rgba(255, 193, 7, 0.18)
   );
+  border: 1px solid rgba(255, 215, 0, 0.2);
 }
 
 .holographic::before {
   content: "";
   @apply absolute -top-1/2 -left-1/2 w-[200%] h-[200%];
+
   background: linear-gradient(
-    to bottom right,
-    transparent,
-    rgba(255,255,255,0.1),
-    transparent
+    120deg,
+    transparent 35%,
+    rgba(255, 255, 255, 0.45) 50%,
+    rgba(255, 235, 150, 0.35) 55%,
+    transparent 70%
   );
-  transform: rotate(30deg);
+
+  transform: rotate(25deg);
   animation: var(--animate-shine);
 }
-
 /* Grid Pattern */
 
 .grid-pattern {

@@ -6,10 +6,14 @@ import { socialPlatforms } from "./Work";
 import Akshay from '../assets/akshay.png'
 import Lottie from "react-lottie-player";
 import lottieJson from '../lottieYellow.json'
+import { useNavigate } from "react-router-dom";
 
 
 
 const Hero = () => {
+
+  const navigate = useNavigate()
+
   return (
     <section
       className="min-h-screen relative z-10  flex items-center pt-10 "
@@ -60,10 +64,11 @@ const Hero = () => {
             className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start ">
 
               <motion.a 
+              
               whileHover={{scale:1.05}}
               whileTap={{scale:0.95}}
-              href="#work"
-              className="bg-gradient-to-r from-gray-700 to-yellow-400 px-6 py-3 flex font-bold items-center rounded-full cursor-pointer">
+              href="#project"
+              className="bg-gradient-to-r font-bold from-[#ff8a00] via-[#ffb300] via-50% to-[#ffd54f] px-6 py-3 flex font-bold items-center rounded-full cursor-pointer">
                 View My Work
                 <FaArrowRight className="ml-2"/>
                 </motion.a>
@@ -72,7 +77,8 @@ const Hero = () => {
                whileHover={{scale:1.08}}
               whileTap={{scale:0.95}}
               href="#contact"
-               className="border-2 border-yellow-300 hover:bg-gradient-to-r from-gray-700 to-yellow-400 px-6 py-3 font-bold flex items-center rounded-full cursor-pointer">
+              
+               className="border-2 border-yellow-300 hover:bg-gradient-to-r font-bold from-[#ff8a00] via-[#ffb300] via-50% to-[#ffd54f] px-6 py-3 font-bold flex items-center rounded-full cursor-pointer">
                 Get In Touch
                 < MdTouchApp className="ml-2 w-7 h-5" />
                 </motion.a>

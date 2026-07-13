@@ -37,7 +37,7 @@ const Skill = () => {
   return (
     <section 
       id='skills' 
-      className='py-16 pb-24 px-[6vw] sm:px-[8vw] lg:px-[10vw] overflow-hidden'
+      className='py-20 pb-24 px-[6vw] sm:px-[8vw] lg:px-[10vw] overflow-hidden'
     >
       {/* Header Section */}
       <motion.div 
@@ -53,7 +53,7 @@ const Skill = () => {
                   whileInView={{opacity:1 , scale:1}}
                   transition={{duration:0.8}}
                   viewport={{once:false , amount:0.3}}>
-            <h2 className='text-center text-3xl sm:text-4xl md:text-5xl font-bold text-amber-300'>
+            <h2 className='text-center text-3xl sm:text-4xl md:text-5xl font-bold gradient-text'>
           Skills
         </h2>
         <div className='w-24 h-1 bg-yellow-400 mx-auto mt-2'></div>
