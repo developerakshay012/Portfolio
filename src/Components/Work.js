@@ -47,10 +47,13 @@ import npmLogo from '../assets/work_logo/npm.png';
 import webverLogo from '../assets/work_logo/web_dig.png';
 
 // Experience Section Logo's
-import webverseLogo from '../assets/company_logo/webverse_logo.png';
+import webverseLogo from '../assets/company_logo/exellence.png';
 import agcLogo from '../assets/company_logo/agc_logo.png';
-import newtonschoolLogo from '../assets/company_logo/newtonschool_logo.png';
+import newtonschoolLogo from '../assets/company_logo/newtonschool_logo.png'
 
+// education logo
+import RimtLogo from '../assets/company_logo/rimt.jpg'
+import BsebLogo from '../assets/company_logo/bseb.jpg'
 
 export const SkillsInfo = [
   {
@@ -113,9 +116,9 @@ export const experiences = [
     {
       id: 0,
       img: webverseLogo,
-      role: "Fullstack Developer",
-      company: "Webverse Digital",
-      date: "April 2024 - Present",
+      role: "Mern stack Developer",
+      company: "Exellence Technology",
+      date: "JAN 2026 - JULY 2026",
       desc: "Developed dynamic and scalable web applications using the MERN stack, handling both frontend and backend development. Collaborated with cross-functional teams to build responsive UI, implement RESTful APIs, and optimize application performance in an agile environment.",
       skills: [
         "HTML",
@@ -127,35 +130,18 @@ export const experiences = [
         "Tailwind CSS",
         "MongoDb",
         "Redux",
-        " Next Js",
+        
       ],
     },
     {
       id: 1,
       img: agcLogo,
-      role: "Fullstack Engineer",
-      company: "Agumentik Group of Companies",
-      date: "July 2023 - March 2024",
-      desc: "Contributed to innovative projects as a Fullstack Engineer, leading both frontend and backend development using technologies such as HTML, CSS, JavaScript, PHP, SQL, Bootstrap, and ReactJS. Worked closely with the team to deliver responsive, high-performance web applications and improve user experience through seamless integration of various technologies.",
-      skills: [
-        "ReactJS",
-        "Redux",
-        "JavaScript",
-        "Tailwind CSS",
-        "HTML",
-        "CSS",
-        "SQL",
-      ],
-    },
-    {
-      id: 2,
-      img: newtonschoolLogo,
       role: "Frontend Intern",
-      company: "Newton School",
-      date: "September 2021 - August 2022",
+      company: "Future Finders",
+      date: "June 2024 - October 2024",
       desc: "Worked as a Frontend Developer Intern, designing and implementing scalable UI components and responsive websites using HTML, CSS, JavaScript, Bootstrap, and Material UI. Collaborated with the design team to translate wireframes and prototypes from Figma into interactive, user-friendly web pages.",
       skills: [
-        "HTML",
+       "HTML",
         "CSS",
         "Javascript",
         "Bootstrap",
@@ -163,13 +149,47 @@ export const experiences = [
         "Material UI",
       ],
     },
+  
   ];
+
+
+  export const education = [
+    {
+      id: 0,
+      img: RimtLogo,
+      school: "RIMT UNIVERSITY, PUNJAB",
+      date: "july 2022 - June 2026",
+      grade: "7.81 CGPA",
+      description: "I completed my Bachelor of Technology (B.Tech) in Computer Science and Engineering, where I built a strong foundation in computer science fundamentals and software development. Throughout the program, I studied core subjects including Data Structures & Algorithms (DSA), Database Management Systems (DBMS), Computer Networks (CN), Operating Systems (OS), Object-Oriented Programming (OOP), Software Engineering, and Web Technologies. I also worked on academic and personal projects that strengthened my problem-solving, programming, and full-stack development skills, preparing me for a career in software engineering.",
+
+degree: "Bachelor of Technology (B.Tech) - Computer Science and Engineering"
+    },
+
+    {
+  id: 2,
+  img: BsebLogo, // Replace with your 12th school logo
+  school: "JRHS High school Salarpur",
+  date: "Mar 2020 - Feb 2022",
+  grade: "70%",
+   description: "I completed my Higher Secondary Education (Class 12) from JRHS Salarpur under the Bihar School Examination Board (BSEB). My academic curriculum focused on Physics, Chemistry, and Mathematics (PCM), along with English and Hindi. During this period, I developed strong analytical and problem-solving skills while building a solid foundation in mathematics and science, which later supported my studies in computer science and software development.",
+  degree: "Higher Secondary Education (Class XII) - PCM | Bihar School Examination Board (BSEB)",
+},
+    {
+  id: 3,
+  img: BsebLogo, // Replace with your school logo
+  school: "JRHS High school Salarpur",
+  date: "Mar 2019 - Feb 2020",
+  grade: "63%",
+   description: "I completed my Secondary Education (Class 10) from JRHS Salarpur under the Bihar School Examination Board (BSEB). During my schooling, I studied core subjects including Mathematics, Science, Social Science, Hindi, and English. This stage helped me develop a strong academic foundation, critical thinking, and problem-solving skills, which later supported my higher education in science and technology.",
+  degree: "Secondary Education (Class X) - Bihar School Examination Board (BSEB)",
+},
+  ]
 
 export const navItems = [
     { label: "Home", href: "#home" },
-    { label: "Work", href: "#work" },
     { label: "Skills", href: "#skills" },
-    { label: "Exprience", href: "#Exprience" },
+     { label: "Exprience", href: "#Exprience" },
+      {label:"Project", href:"project"},
     { label: "Education", href: "#Education" },
 ];
 

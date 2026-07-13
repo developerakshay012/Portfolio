@@ -8,6 +8,7 @@ import Hero from './Components/Hero'
 import Project from './Components/Project'
 import Skill from './Components/Skill'
 import Exprence from './Components/Exprence'
+import Education from './Components/Education'
 
 function App() {
   
@@ -23,9 +24,12 @@ function App() {
 
           <main>
             <Hero/>
+             <Skill/>
+             <Exprence/>
             <Project/>  
-            <Skill/>
-            <Exprence/>
+            <Education/>
+           
+            
           </main>
 
       </div>
