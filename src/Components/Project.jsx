@@ -57,6 +57,11 @@ const Project = () => {
             animate={{ opacity: 1, y: 0 }}
              transition={{delay:0.6 , duration:0.8}}
             viewport={{once:false, amount:0.3}}
+
+            initial={{opacity:0 , scale:0.8}}
+                  whileInView={{opacity:1 , scale:1}}
+                  transition={{duration:0.8}}
+                  viewport={{once:false , amount:0.3}}
             className='text-center mb-12 md:mb-16'
           >
             <span className='inline-block px-4 py-2 glass dark:glass rounded-full text-yellow-400 uppercase text-[15px] font-bold tracking-wider'>

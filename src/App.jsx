@@ -7,6 +7,7 @@ import Header from './Components/Header'
 import Hero from './Components/Hero'
 import Project from './Components/Project'
 import Skill from './Components/Skill'
+import Exprence from './Components/Exprence'
 
 function App() {
   
@@ -24,6 +25,7 @@ function App() {
             <Hero/>
             <Project/>  
             <Skill/>
+            <Exprence/>
           </main>
 
       </div>

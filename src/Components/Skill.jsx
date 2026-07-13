@@ -46,8 +46,14 @@ const Skill = () => {
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true, margin: '-100px' }}
         transition={{ duration: 0.6 }}
+
+        
       >
-        <h2 className='text-center text-3xl sm:text-4xl md:text-5xl font-bold text-amber-300'>
+          <motion.div  initial={{opacity:0 , scale:0.8}}
+                  whileInView={{opacity:1 , scale:1}}
+                  transition={{duration:0.8}}
+                  viewport={{once:false , amount:0.3}}>
+            <h2 className='text-center text-3xl sm:text-4xl md:text-5xl font-bold text-amber-300'>
           Skills
         </h2>
         <div className='w-24 h-1 bg-yellow-400 mx-auto mt-2'></div>
@@ -55,6 +61,8 @@ const Skill = () => {
         <p className='text-glass font-semibold text-center text-base sm:text-lg mt-4 max-w-2xl mx-auto opacity-90'>
           My technical toolkit, refined through continuous learning, practical projects, and real-world development.
         </p>
+          </motion.div>
+
       </motion.div>
 
       {/* Skills Container Grid */}
