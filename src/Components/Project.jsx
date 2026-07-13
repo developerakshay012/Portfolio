@@ -59,7 +59,7 @@ const Project = () => {
             viewport={{once:false, amount:0.3}}
             className='text-center mb-12 md:mb-16'
           >
-            <span className='inline-block px-4 py-2 glass dark:glass rounded-full text-yellow-300 uppercase text-xs tracking-wider'>
+            <span className='inline-block px-4 py-2 glass dark:glass rounded-full text-yellow-400 uppercase text-[15px] font-bold tracking-wider'>
               project
             </span>
             <h2 className='text-3xl sm:text-4xl md:text-5xl font-bold mt-3 text-yellow-400'>
@@ -81,6 +81,12 @@ const Project = () => {
           >
             {projects.map((imge, index) => (
               <motion.div
+
+              initial={{opacity:0 , scale:0.8}}
+                  whileInView={{opacity:1 , scale:1}}
+                  transition={{duration:0.8}}
+                  viewport={{once:false , amount:0.3}}
+
                 variants={cardVariants}
                 whileHover={{scale:1.02}}
                 transition={{delay:0.6 , duration:0.8}}
@@ -166,8 +172,8 @@ const Project = () => {
                 {/* Close Button Row */}
                 <div className='flex items-center justify-end p-4 absolute top-0 right-0 z-10'>
                   <motion.button
-                    whileHover={{ scale: 1.1, rotate: 90 }}
-                    whileTap={{ scale: 0.9 }}
+                    whileHover={{ scale: 1.1, rotate: 360 }}
+                    whileTap={{ scale: 0.9 , delay:0.7}}
                     onClick={handleCloseModal}
                     className='glass dark:glass p-2 rounded-full text-3xl font-bold hover:text-yellow-300'
                   >
