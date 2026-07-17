@@ -85,7 +85,7 @@ const Education = () => {
 
                               {/* exp date */}
 
-                              <p className='sm:text-md text-sm mt-2'>{edu.grade}</p>
+                              <p className='sm:text-md text-sm mt-2'>Grade {edu.grade}</p>
 
                         </div>
                     </div>
