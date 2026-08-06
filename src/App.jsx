@@ -11,6 +11,7 @@ import Exprence from './Components/Exprence'
 import Education from './Components/Education'
 import About from './Components/About'
 import Contact from './Components/Contact'
+import { ToastContainer } from 'react-toastify'
 
 function App() {
   
@@ -21,6 +22,14 @@ function App() {
   return (
     <>
       <div className='min-h-screen grid-pattern html.dark .grid-pattern'>
+          <ToastContainer
+  position="top-right"
+  autoClose={3000}
+  theme="colored"
+  newestOnTop
+  style={{ zIndex: 999999 }} // <-- Forces it above fixed headers/navbars
+/>
+     
           <AnimateBg/>
           <Header/>
 
