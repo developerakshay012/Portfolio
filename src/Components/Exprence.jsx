@@ -27,7 +27,7 @@ const Exprence = () => {
                   transition={{duration:0.8}}
                   viewport={{once:false , amount:0.3}}
         className='text-center mb-16'>
-            <h2 className='uppercase lg:text-4xl md:text-2xl text-5xl font-bold gradient-text'>Exprience</h2>
+            <h2 className='uppercase lg:text-4xl md:text-2xl text-5xl font-bold gradient-text'>Experience</h2>
             <div className='w-30  mx-auto h-1 bg-yellow-300  rounded-sm'></div>
             <p className='text-[17px] pt-3 font-semibold'>
               A timeline of my work experience, highlighting the roles, responsibilities, and achievements throughout my career.
