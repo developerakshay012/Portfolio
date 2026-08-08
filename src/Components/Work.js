@@ -188,7 +188,7 @@ degree: "Bachelor of Technology (B.Tech) - Computer Science and Engineering"
 export const navItems = [
     { label: "Home", href: "#home" },
     { label: "Skills", href: "#skills" },
-     { label: "Exprience", href: "#exprience" },
+     { label: "Experience", href: "#experience" },
       {label:"Project", href:"#project"},
     { label: "Education", href: "#education" },
 ];
