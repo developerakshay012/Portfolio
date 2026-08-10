@@ -17,7 +17,7 @@ const Exprence = () => {
 
 
   return (
-    <section id='exprience' className='py-20 pb-5  px-[12vw] md:px-[7vw] lg:px-[16vw]'>
+    <section id='experience' className='py-20 pb-5  px-[12vw] md:px-[7vw] lg:px-[16vw]'>
 
         {/* exprience title */}
 

@@ -4,6 +4,7 @@ import { FaArrowRight } from "react-icons/fa";
 import { MdTouchApp } from "react-icons/md";
 import { socialPlatforms } from "./Work";
 import Akshay from '../assets/akshay.png'
+import aks from '../assets/aks.png'
 import Lottie from "react-lottie-player";
 import lottieJson from '../lottieYellow.json'
 import { useNavigate } from "react-router-dom";
