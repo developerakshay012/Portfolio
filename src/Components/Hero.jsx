@@ -39,10 +39,10 @@ const Hero = () => {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8 }}
               viewport={{ once: false, amount: 0.3 }}
-              className="text-5xl sm:text-6xl lg:text-7xl font-bold leading-tight mb-3"
+              className="text-5xl sm:text-6xl lg:text-5xl font-bold leading-tight mb-3"
             >
               <span className="text-yellow-600">Hi, I'm Akshay </span>
-              <span className="block">MERN Developer</span>
+              <span className="block">Full Stack {" "} MERN Developer</span>
             </motion.h1>
 
             <motion.p 
@@ -52,7 +52,7 @@ const Hero = () => {
               viewport={{ once: false, amount: 0.3 }}
               className="font-semibold text-lg sm:text-xl max-w-2xl mx-auto lg:mx-0 mb-8 "
               >
-            Passionate Full Stack Developer crafting responsive, scalable modern technologies
+            Passionate Full Stack Developer crafting responsive, scalable, and modern web applications with clean, efficient code and seamless user experiences. I specialize in building dynamic, high-performance solutions using the MERN stack and modern web technologies.
             </motion.p>
 
             {/* buttons */}
